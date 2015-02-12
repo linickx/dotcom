@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% block content_title %}
+<h2 class="linickx-control">Archives: {{ SITENAME }}</h2>
+{% endblock %}
+
+
+<dl>
+{% for article in dates_page.object_list %}
+    <dt>{{ article.locale_date }}</dt>
+    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+{% endfor %}
+</dl>
+
+<p class="paginator linickx-control">
+    {% if dates_page.has_previous() %}
+    <a href="{{ SITEURL }}/{{ dates_previous_page.url }}">&laquo;</a>
+    {% endif %}
+    Page {{ dates_page.number }} / {{ dates_paginator.num_pages }}
+    {% if dates_page.has_next() %}
+    <a href="{{ SITEURL }}/{{ dates_next_page.url }}">&raquo;</a>
+    {% endif %}
+</p>
+
+{% endblock content %}

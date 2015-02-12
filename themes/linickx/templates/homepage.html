@@ -1,0 +1,31 @@
+{% extends "page.html" %}
+
+{% block head %}
+
+
+{{ super() }}
+
+<meta name="description" content="I am Nick and welcome to my bit of space on the internet. I work in Network Security, dabble in WordPress and blog. If you re looking for something to read try my start page, or maybe you just wanna say hi!..." />
+
+<style>
+.entry-content {
+    font-size: 2em;
+    text-align: center;
+    padding: 50px;
+}
+
+.entry-content h1 {
+    font-size: 2.5em;
+    text-align: left;
+    color: white;
+}
+</style>
+{% endblock head %}
+
+{% block content %}
+<div class="entry-content">
+    {{ page.content }}
+</div><!-- /.entry-content -->
+{% endblock %}
+
+{% set LINICKX_FOOTER = False %}

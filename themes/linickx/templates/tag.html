@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block title %}{{ SITENAME }} - {{ tag }}{% endblock %}
+
+
+{% block lnxnav %}
+<a href="{{ SITEURL }}/blog">Blog</a> | <a href="">Contact</a>
+{% endblock lnxnav %}
+
+{% block content %}
+{% block content_title %}
+<h2 class="linickx-control">Tag Archive: {{ tag }}</h2>
+{% endblock content_title %}
+{{ super() }}
+{% endblock content %}

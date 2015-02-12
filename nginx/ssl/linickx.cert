@@ -1,0 +1,73 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 11 (0xb)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: CN=LINICKX.com CA, C=GB, ST=London, L=London, O=linickx.com/emailAddress=nick@linickx.com
+        Validity
+            Not Before: Mar  1 16:33:50 2008 GMT
+            Not After : Feb 27 16:33:50 2018 GMT
+        Subject: C=GB, ST=London, O=linickx.com, OU=linickx.com, CN=www.linickx.com/emailAddress=support@linickx.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:d1:b2:e1:eb:7d:ef:1d:5f:33:01:20:c3:83:b3:
+                    fd:06:e8:a8:d5:19:56:ec:be:d9:33:d9:1c:3c:50:
+                    56:07:85:02:2d:d1:58:4d:59:f9:87:e1:d8:dd:87:
+                    59:61:5e:c0:45:e8:82:e5:8f:ca:7d:ce:07:c0:6c:
+                    44:62:1c:9f:d3:07:72:91:20:35:87:db:d0:81:e0:
+                    58:13:7c:97:c1:b0:68:64:a2:ed:d5:69:78:d9:3d:
+                    d4:e3:56:cd:2e:63:c4:65:73:c8:7f:22:ba:63:af:
+                    05:30:cf:e4:8f:4f:de:da:e7:5b:e6:39:0c:9f:fe:
+                    c6:ea:31:ca:e2:d8:ab:c5:df
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+            CA:FALSE
+            X509v3 Subject Key Identifier: 
+            DC:84:9A:D2:F8:11:59:56:43:C8:B7:E5:3C:30:0F:60:34:5E:5C:10
+            X509v3 Authority Key Identifier: 
+            keyid:70:67:4F:86:1B:C3:75:27:0B:DC:56:33:31:9D:C8:1F:3F:FB:79:6E
+            DirName:/CN=LINICKX.com CA/C=GB/ST=London/L=London/O=linickx.com/emailAddress=nick@linickx.com
+            serial:00
+
+    Signature Algorithm: sha1WithRSAEncryption
+        40:53:01:04:86:83:92:39:63:ba:5d:4c:56:1c:cd:a6:7d:e3:
+        c3:c1:4e:8e:ee:9b:49:23:99:1c:a4:b1:04:1e:48:db:25:d1:
+        59:39:21:5a:c8:ff:f7:9c:c3:ed:d0:b5:50:0c:cf:b2:cd:3f:
+        ac:82:0e:2e:01:b9:bf:c3:e0:0e:c3:cd:d7:66:66:7b:dd:16:
+        c2:4c:45:24:74:d2:21:92:ac:c3:ee:98:60:32:4e:3d:07:e8:
+        56:98:97:7d:74:e4:45:83:54:51:d6:e4:b4:ac:2f:2d:28:82:
+        50:d7:39:a1:92:33:d2:16:23:cc:4c:89:f1:4a:27:4e:a1:52:
+        d6:b2:d1:5b:79:b1:69:b0:12:e5:23:86:0f:b7:10:5f:3f:1d:
+        f9:55:d1:83:8d:35:ef:92:c8:76:57:6e:fd:15:60:f7:42:78:
+        a7:f7:90:05:de:ca:c1:41:cc:b1:05:e8:c3:03:ec:23:9c:9e:
+        9b:57:de:e4:bd:76:a7:84:90:ec:c9:bc:e8:0d:1e:aa:7c:86:
+        82:c0:73:d3:47:27:be:c4:a4:24:ff:9a:6d:39:c0:c6:82:91:
+        e7:f7:e7:e9:1b:42:f9:dc:c6:32:12:b9:6e:3a:94:b4:17:cb:
+        c8:c4:5f:51:2c:75:1f:b4:f7:58:9d:95:0a:b6:f9:fd:b0:33:
+        5f:d2:5f:37
+-----BEGIN CERTIFICATE-----
+MIID2zCCAsOgAwIBAgIBCzANBgkqhkiG9w0BAQUFADB/MRcwFQYDVQQDEw5MSU5J
+Q0tYLmNvbSBDQTELMAkGA1UEBhMCR0IxDzANBgNVBAgTBkxvbmRvbjEPMA0GA1UE
+BxMGTG9uZG9uMRQwEgYDVQQKEwtsaW5pY2t4LmNvbTEfMB0GCSqGSIb3DQEJARYQ
+bmlja0BsaW5pY2t4LmNvbTAeFw0wODAzMDExNjMzNTBaFw0xODAyMjcxNjMzNTBa
+MIGIMQswCQYDVQQGEwJHQjEPMA0GA1UECBMGTG9uZG9uMRQwEgYDVQQKEwtsaW5p
+Y2t4LmNvbTEUMBIGA1UECxMLbGluaWNreC5jb20xGDAWBgNVBAMTD3d3dy5saW5p
+Y2t4LmNvbTEiMCAGCSqGSIb3DQEJARYTc3VwcG9ydEBsaW5pY2t4LmNvbTCBnzAN
+BgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0bLh633vHV8zASDDg7P9Buio1RlW7L7Z
+M9kcPFBWB4UCLdFYTVn5h+HY3YdZYV7AReiC5Y/Kfc4HwGxEYhyf0wdykSA1h9vQ
+geBYE3yXwbBoZKLt1Wl42T3U41bNLmPEZXPIfyK6Y68FMM/kj0/e2udb5jkMn/7G
+6jHK4tirxd8CAwEAAaOB2zCB2DAJBgNVHRMEAjAAMB0GA1UdDgQWBBTchJrS+BFZ
+VkPIt+U8MA9gNF5cEDCBqwYDVR0jBIGjMIGggBRwZ0+GG8N1JwvcVjMxncgfP/t5
+bqGBhKSBgTB/MRcwFQYDVQQDEw5MSU5JQ0tYLmNvbSBDQTELMAkGA1UEBhMCR0Ix
+DzANBgNVBAgTBkxvbmRvbjEPMA0GA1UEBxMGTG9uZG9uMRQwEgYDVQQKEwtsaW5p
+Y2t4LmNvbTEfMB0GCSqGSIb3DQEJARYQbmlja0BsaW5pY2t4LmNvbYIBADANBgkq
+hkiG9w0BAQUFAAOCAQEAQFMBBIaDkjljul1MVhzNpn3jw8FOju6bSSOZHKSxBB5I
+2yXRWTkhWsj/95zD7dC1UAzPss0/rIIOLgG5v8PgDsPN12Zme90WwkxFJHTSIZKs
+w+6YYDJOPQfoVpiXfXTkRYNUUdbktKwvLSiCUNc5oZIz0hYjzEyJ8UonTqFS1rLR
+W3mxabAS5SOGD7cQXz8d+VXRg40175LIdldu/RVg90J4p/eQBd7KwUHMsQXowwPs
+I5yem1fe5L12p4SQ7Mm86A0eqnyGgsBz00cnvsSkJP+abTnAxoKR5/fn6RtC+dzG
+MhK5bjqUtBfLyMRfUSx1H7T3WJ2VCrb5/bAzX9JfNw==
+-----END CERTIFICATE-----

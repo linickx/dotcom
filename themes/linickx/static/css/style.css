@@ -1,0 +1,112 @@
+
+/*
+
+    NB - LINICKX.com custom styles
+
+*/
+
+h1, h2, h3 {
+    font-family: 'Give You Glory',cursive;
+}
+
+body {
+  background-color: #1d1d1d;
+}
+
+.mynav {
+    font-size: 1.25em;
+    margin-top: -1em;
+}
+
+.linickx-control {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.title {
+    font-family: 'Give You Glory',cursive;
+    letter-spacing:0.1em;
+    padding-top: 2em;
+}
+
+.title a:hover {
+    text-decoration: none;
+}
+
+.linickx {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.nick {
+    font-size: 4.5em;
+}
+
+h3.mysig {
+    font-size: 4em;
+
+}
+
+.linickx-footer {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-width: 1px;
+    border-color: #666;
+    padding: 5px 0px 5px 0px;
+}
+
+ul#post-list {
+    list-style-type: none;
+}
+
+pre {
+  display: block;
+  width: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre;
+  word-wrap: normal;
+  background-color: #aaaaaa;
+  color:#000000;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+code {
+  background-color: #0f0f0f;
+  color:#0f9adc;
+}
+
+ul.tagcloud {
+  list-style: none;
+    padding: 0;
+}
+
+ul.tagcloud li {
+    display: inline-block;
+}
+
+li.tag-1 {
+    font-size: 300%;
+}
+
+li.tag-2 {
+    font-size: 250%;
+}
+
+li.tag-3 {
+    font-size: 200%;
+}
+
+li.tag-4 {
+    font-size: 150%;
+}
+
+li.tag-5 {
+    font-size: 100%;
+}
+
+li.tag-6 {
+    font-size: 50%;
+}

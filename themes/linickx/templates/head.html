@@ -1,0 +1,31 @@
+        <!-- Open ID -->
+        <meta http-equiv="X-XRDS-Location" content="http://linickx.myopenid.com/xrds" />
+        <link rel="openid.server" href="http://www.myopenid.com/server" />
+        <link rel="openid.delegate" href="http://linickx.myopenid.com" />
+
+        <!-- Pavatar -->
+        <link rel="pavatar" href="http://www.linickx.com/images/pavatar.png" />
+        <link rel="avatar" href="http://www.linickx.com/images/pavatar.png" />
+
+        <!-- MicroID -->
+        <meta name="microid" content="mailto+http:sha1:a8a79f2a351f5e6efbeb63008acb44e28470b4ad" />
+        <meta name="microid" content="mailto+http:sha1:32c91bf4c2baac51ba43fca55a8d3c0d2a20a86a" />
+
+        <!-- Author -->
+        <link rel="author" href="https://plus.google.com/+NickBettison" title="Nick Bettison on Google+" />
+
+        <!-- Feeds -->
+        {% if FEED_RSS_URL %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS_URL }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM_URL %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM_URL }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+
+
+        {% if TAG_FEED_RSS_URL and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS_URL|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ tag.slug }} Tag RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM_URL and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM_URL|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag.slug }} Tag Atom Feed" />
+        {% endif %}

@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block title %}{{ SITENAME }} - Archives: {{ period | reverse | join(' ') }} {% endblock %}
+
+{% block lnxnav %}
+<a href="{{ SITEURL }}/blog">Blog</a> | <a href="">Contact</a>
+{% endblock lnxnav %}
+
+
+{% block content %}
+
+{% block content_title %}
+<h2 class="linickx-control">Archives: {{ period | reverse | join(' ') }}</h2>
+{% endblock %}
+
+<section id="content">
+    <ul id="post-list">
+        {% for article in dates %}
+        <li><article class="hentry">
+            <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+            <footer class="post-info linickx-control">
+                <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+            </footer><!-- /.post-info -->
+            <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+        </article>
+        <hr style="border-top: 1px solid white;" /></li>
+        {% endfor %}
+    </ul><!-- /#posts-list -->
+
+</section><!-- /#content -->
+{% endblock content %}
