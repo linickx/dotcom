@@ -58,6 +58,12 @@ ul#post-list {
     list-style-type: none;
 }
 
+.linickx-control ul, .linickx-control li{
+  list-style-type:none;
+  display: inline;
+  padding: 2px;
+}
+
 pre {
   display: block;
   width: auto;

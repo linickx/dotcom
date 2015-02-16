@@ -13,6 +13,8 @@ from pelicanconf import *
 SITEURL = 'http://www.linickx.com'
 FEED_DOMAIN = SITEURL
 RELATIVE_URLS = False
+DELETE_OUTPUT_DIRECTORY = False
+OUTPUT_PATH = 'public_html/'
 
 FEED_RSS_SAVE_AS = 'content/feed/rss.xml'
 FEED_RSS_URL = 'feed'
@@ -31,10 +33,9 @@ AUTHOR_FEED_RSS_SAVE_AS = None
 FEED_MAX_ITEMS = 10
 
 
-DELETE_OUTPUT_DIRECTORY = True
 
 # Plugins
-PLUGINS=['plugins.sitemap', 'plugins.gzip_cache', 'plugins.assets']
+PLUGINS=['plugins.sitemap', 'plugins.assets', 'minify', 'plugins.gzip_cache']
 
 SITEMAP = {
     'format': 'xml',

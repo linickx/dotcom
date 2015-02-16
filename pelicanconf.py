@@ -5,11 +5,12 @@ from __future__ import unicode_literals
 AUTHOR = 'Nick Bettison'
 SITENAME = 'LINICKX.com'
 SITEURL = 'http://linickx.local:8080'
-
 FEED_DOMAIN = SITEURL
 
 PATH = 'content'
-OUTPUT_PATH = 'public_html/'
+
+DELETE_OUTPUT_DIRECTORY = False
+OUTPUT_PATH = 'output/'
 
 DEFAULT_METADATA = (('generator', 'pelican'),)
 

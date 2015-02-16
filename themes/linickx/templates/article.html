@@ -16,29 +16,33 @@
 {% endblock head %}
 
 {% block content %}
-<section id="content" class="body">
+<section itemscope itemtype="http://schema.org/Article" id="content" class="body">
   <header>
     <h2 class="entry-title">
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+      <a itemprop="url" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
          title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
  {% import 'translations.html' as translations with context %}
  {{ translations.translations_for(article) }}
   </header>
 
-  <div class="entry-content">
+  <div itemprop="articleBody" class="entry-content">
     {{ article.content }}
   </div><!-- /.entry-content -->
 
   <h3> rgds, </h3>
   <h3 class="mysig" > Nick </h3>
 
+
   <footer class="post-info linickx-footer linickx-control">
 
-      Published: <a href="{{ SITEURL }}/date/{{ article.date.strftime("%Y") }}/{{ article.date.strftime("%m") }}">{{ article.date.strftime("%b") }}</a> <a href="{{ SITEURL }}/date/{{ article.date.strftime("%Y") }}">{{ article.date.strftime("%Y") }}</a> <br />
+    <ul><li>Published: <span itemprop="datePublished" content="{{ article.date.isoformat() }}" class="updated"><a href="{{ SITEURL }}/date/{{ article.date.strftime("%Y") }}/{{ article.date.strftime("%m") }}">{{ article.date.strftime("%b") }}</a> <a href="{{ SITEURL }}/date/{{ article.date.strftime("%Y") }}">{{ article.date.strftime("%Y") }}</a></span></li></ul>
 
     {% if article.tags %}
-      Tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a> {% endfor %}
+    <ul><li>Tags:</li> {% for tag in article.tags %}<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a></li> {% endfor %}<ul><li>
     {% endif %}
+
+    <ul><li>Author: <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="author vcard"><a itemprop="url" class="url" href="http://www.linickx.com"><span itemprop="name" class="fn">Nick Bettison</a></span></span></li></ul>
+
   </footer><!-- /.post-info -->
 
 </section>
